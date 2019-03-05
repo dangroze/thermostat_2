@@ -41,5 +41,8 @@ Thermostat.prototype = {
       return this._temperature === this.MAX_LIMIT_PSM_OFF;
     }
     return this._temperature === this.MAX_LIMIT_PSM_ON;
+  },
+  reset: function () {
+    this._temperature = this.DEFAULT_TEMPERATURE;
   }
 }
